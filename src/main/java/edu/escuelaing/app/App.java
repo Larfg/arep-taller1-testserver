@@ -32,12 +32,14 @@ public class App{
                 ok = false;
             }
         }
+        System.out.println("==========================================================");
         if (ok == true){
             System.out.println("El servidor funciona correctamente");
         }
         else{
             System.out.println("El servidor no funciona correctamente");
         }
+        System.out.println("==========================================================");
 
     }
 
