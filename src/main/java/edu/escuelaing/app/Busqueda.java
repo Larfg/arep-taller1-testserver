@@ -2,11 +2,18 @@ package edu.escuelaing.app;
 
 import java.io.*;
 import java.net.*;
-
+/**
+ * Hilo de busqueda de una pelicula con un titulo
+ * @author Luis Giraldo
+ * @version 1.0
+ */
 public class Busqueda extends Thread {
     private boolean ok = false;
     private String titulo = "";
 
+    /**
+     * Metodo que nos ejecuta el hilo, y nos realiza una consulta al servidor retornando los datos de la pelicula
+     */
     @Override
     public void run() {
         Socket echoSocket = null;
